@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menuitem {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+ 
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+	</script>
+	<title>Saputan Sa CvSU-Silang | Welcome</title>
+	<link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+	<nav>
+		<a id="home" href="#HomeSection">HOME</a>
+		<a id="about" href="#AboutSection">ABOUT</a>
+		<a id="services" href="#ServicesSection">SERVICES</a>
+		<a id="contact" href="#ContactSection">CONTACT</a>
+		<a id="portfolio" href="#PortfolioSection">PORTFOLIO</a>
+	</nav>
+	<div id="HomeSection" class="sect sectOne">
+		<center>
+			<br><br><br><br><br><br>
+     <h1>The 20th Century Website</h1>
+     <br>
+     <a href="https://www.facebook.com/RVNSNTNDR09">
+     <img src="images/15.png" style="width:255px;height:298px;">
+     </a>
+     </center>
+	</div>
+	<div id="AboutSection" class="subSection">
+		<br><br><br>
+		<section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">About Me</h1>
+          <p>
+            There is no intro in here I am from Earth And from  the Country of the Phillippines, And studying in the college school of Cvsu-Silang,But I live in Dasma.  
+          </p>
+          <p class="orange">
+I am Studying ComSci in Cvsu-Silang and Creating And Developing System or Website is what I do right now.Like it or not you're living in it – this is the Digital Age. Computer programmes have all but infiltrated every aspect of our lives. Computer scientists theorise, design, develop, and apply the software and hardware for the programmers we use day in day out – sounds pretty important to us.
+          </p>
+        </article>
+      </div>
+    </section>
+	</div>
+	<div id="ServicesSection" class="sect sectTwo">
+		<br><br><br><br><br>
+		<section id="main">
+      <div class="container">
+        <article id="main-col">
+        	<center>
+          <h1 class="page-title">Web Developer</h1>
+          <p>
+            The terms "web designer" and "web developer" are often used in the web industry. Many times, these terms are a "catch all" that is meant to describe someone who actually fills a number of roles in the process of a website's creation.
+          </p>
+          <h1 class="page-title">Software Developer</h1>
+          <p class="orange">
+          	Software development is the process of computer programming, documenting, testing, and bug fixing involved in creating and maintaining applications and frameworks resulting in a software product.
+          </p>
+        </article>
+        <aside id="sidebar">
+          <div class="orange">
+            <h1 class="page-title">Programmer</h1>
+            <p>Individual that composes instructions for computer systems to refer to when performing a given action.Programmers are essential to the development of computers because without the coding that is necessary to make a computer work properly, the machine would be useless. Programmers may specialize in one area or may write instructions for a wide range of systems or programs.</p>
+            </center>
+          </div>
+        </aside>
+      </div>
+    </section>
+	</div>
+	
+	<div id="ContactSection" class="subSection">
+		<br>
+		<aside id="sidebar">
+          <div class="orange">
+            <h1>Message Us by Using your Email</h1>
+            <form class="quote">
+  						<div>
+  							<label>Name</label><br>
+  							<input type="text" placeholder="Name">
+  						</div>
+  						<div>
+  							<label>Email</label><br>
+  							<input type="email" placeholder="Email Address">
+  						</div>
+  						<div>
+  							<label>Message</label><br>
+  							<textarea placeholder="Message"></textarea>
+  						</div>
+  						<button class="button_1" type="submit">Send</button>
+					</form>
+          </div>
+        </aside>
+	</div>
+	
+	<div id="PortfolioSection" class="sect sectThree">
+		<style>
+img {
+    width:50%;
+}
+</style>
+<center>
+<br><br><br>
+<img src="images/11.png"  width="350" height="250">
+
+<br><br><br>
+<img src="images/12.png" style="width:500px;height:250px;">
+
+	</div>
+</body>
+</html>
